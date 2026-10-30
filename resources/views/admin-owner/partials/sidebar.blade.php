@@ -98,7 +98,7 @@
 
     <!-- Bottom Logout Button -->
     <div class="pt-4 border-t border-white/10">
-        <a href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" 
+        <a href="#" onclick="event.preventDefault(); confirmLogout();" 
            class="flex items-center gap-3 md:justify-center lg:justify-start px-4 py-3 rounded-xl bg-red-100/90 text-red-700 hover:bg-red-200 transition-all duration-150 font-extrabold shadow-sm"
            title="Logout">
             <i class="ri-logout-box-r-fill text-lg"></i>
@@ -147,4 +147,42 @@
     document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('sidebarToggle')?.addEventListener('click', openSidebar);
     });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script>
+function confirmLogout() {
+    Swal.fire({
+        title: 'Logout?',
+        text: 'Yakin ingin keluar dari akun?',
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonText: 'Ya, Logout',
+        cancelButtonText: 'Batal'
+    }).then((result) => {
+        if (result.isConfirmed) {
+            document.getElementById('logout-form').submit();
+        }
+    });
+}
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script>
+function confirmLogout() {
+    Swal.fire({
+        title: 'Logout?',
+        text: 'Yakin ingin keluar dari akun?',
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonText: 'Ya, Logout',
+        cancelButtonText: 'Batal'
+    }).then((result) => {
+        if (result.isConfirmed) {
+            document.getElementById('logout-form').submit();
+        }
+    });
+}
 </script>
