@@ -41,9 +41,4 @@ Cafe Kesorean merupakan aplikasi berbasis web yang dirancang untuk membantu pros
 - CSS
 - JavaScript
 
-## Peran dan Kontribusi
-Dalam proyek ini, saya berkontribusi dalam:
-- Memberikan ide dan masukan dalam perancangan sistem serta penentuan alur aplikasi.
-- Mengembangkan dan mengimplementasikan tampilan antarmuka (frontend) aplikasi.
-- Berkontribusi dalam penyusunan laporan dan dokumentasi proyek.
 
